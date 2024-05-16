@@ -1,0 +1,108 @@
+header{
+    display: flex;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background-color: #1c0d3d;
+    color: white;
+    justify-content:space-between;
+    align-items: center;
+}
+#icone-usuario{
+    width: 80px;
+    padding-right: 20px;
+}
+#logo-principal{
+    width: 80px;
+    height: 80px;
+    padding-left: 20px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-x: hidden;
+}
+#nome-site{
+    font-size: 40px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+    height: 50px;
+    padding: 0;
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 0.548);
+    bottom: 0;
+    margin-top: 15px;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px; 
+}
+
+.todos {
+    width: 300px;
+    margin: 0 10px; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    text-align: center;
+}
+.todos:hover{
+    transform: scale(1.08);
+    background-color: white;
+    transition: 0.3s; 
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.imagem-dos-paticipantes img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.informacoes-dos-paticipantes p {
+    margin: 5px ;
+    
+}
+@media (max-width: 768px) {
+    section {
+        margin: 0;
+        flex-direction: column;
+    }
+    .todos{
+        margin-top: 30px;
+    }
+    #nome-site{
+        font-size: 30px;
+    }
+    #icone-usuario{
+    width: 80px;
+    padding-right: 8px;
+}
+    #logo-principal{
+        width: 70px;
+        padding-left: 10px;
+}
+    footer{
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+    }
+    footer p{
+        padding-top: 15px;
+    }
+    #nome-site{
+        font-size: 20px;
+        align-items: center;
+    }
+}

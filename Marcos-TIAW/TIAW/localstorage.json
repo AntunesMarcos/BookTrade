@@ -1,0 +1,124 @@
+{
+    "livros": [
+    {
+        "id": "1",
+        "titulo": "Orgulho e Preconceito",
+        "autor": "Jane Austen",
+        "data_publicacao": "1813",
+        "genero": "Romance",
+        "img": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/bb00c70d-1128-4379-b40b-85b7af1e221c.__CR0,0,300,300_PT0_SX300_V1___.png"
+    },
+    {
+        "id": "2",
+        "titulo": "Neuromancer",
+        "autor": "William Gibson",
+        "data_publicacao": "1984",
+        "genero": "Ficção",
+        "img": "https://m.media-amazon.com/images/I/61POLNMVhDL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": "3",
+        "titulo": "O Hobbit",
+        "autor": "J.R.R. Tolkien",
+        "data_publicacao": "1937",
+        "genero": "Fantasia",
+        "img": "https://www.lojadobolseiro.com.br/uploads/images/2020/02/76-livro-o-hobbit-capa-smaug-j-r-r-tolkien-1582738560.jpg"
+    },
+    {
+        "id": "4",
+        "titulo": "O Caso dos Dez Negrinhos",
+        "autor": "Agatha Christie",
+        "data_publicacao": "1939",
+        "genero": "Mistério",
+        "img": "https://http2.mlstatic.com/D_NQ_NP_641502-MLB48258426514_112021-O.webp"
+    },
+    {
+        "id": "5",
+        "titulo": "O Iluminado",
+        "autor": "Stephen King",
+        "data_publicacao": "1977",
+        "genero": "Suspense",
+        "img": "https://m.media-amazon.com/images/I/81Q+pJi4NjL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": "6",
+        "titulo": "Frankenstein",
+        "autor": "Mary Shelley",
+        "data_publicacao": "1818",
+        "genero": "Horror",
+        "img": "https://cdn.kobo.com/book-images/bd3fce8f-a9a0-4cb0-a539-d8779090ba51/1200/1200/False/frankenstein-557.jpg"
+    },
+    {
+        "id": "7",
+        "titulo": "As Aventuras de Tom Sawyer",
+        "autor": "Mark Twain",
+        "data_publicacao": "1876",
+        "genero": "Aventura",
+        "img": "https://m.media-amazon.com/images/I/61wXBpb4nzL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": "8",
+        "titulo": "Hamlet",
+        "autor": "William Shakespeare",
+        "data_publicacao": "1600",
+        "genero": "Drama",
+        "img": "https://m.media-amazon.com/images/I/51Cc0654hoL.jpg"
+    },
+    {
+        "id": "9",
+        "titulo": "As Viagens de Gulliver",
+        "autor": "Jonathan Swift",
+        "data_publicacao": "1726",
+        "genero": "Comédia",
+        "img": "https://m.media-amazon.com/images/I/61ZwAZ8eB3L._AC_UF1000,1000_QL80_DpWeblab_.jpg"
+    },
+    {
+        "id": "10",
+        "titulo": "Folhas de Relva",
+        "autor": "Walt Whitman",
+        "data_publicacao": "1855",
+        "genero": "Poesia",
+        "img": "https://m.media-amazon.com/images/I/61QvaausSRL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": "11",
+        "titulo": "Steve Jobs",
+        "autor": "Walter Isaacson",
+        "data_publicacao": "2011",
+        "genero": "Biografia",
+        "img": "https://m.media-amazon.com/images/I/81QAU2Xl2jL._AC_UF350,350_QL50_.jpg"
+    },  
+    {   
+        "id": "12",
+        "titulo": "Sapiens: Uma Breve História da Humanidade",
+        "autor": "Yuval Noah Harari",
+        "data_publicacao": "2011",
+        "genero": "História",
+        "img": "https://m.media-amazon.com/images/I/71-ghLb8qML._AC_UF1000,1000_QL80_.jpg"
+    },  
+    {   
+        "id": "13",
+        "titulo": "A Lua Vem da Ásia",
+        "autor": "Campos de Carvalho",
+        "data_publicacao": "1956",
+        "genero": "Crônica",
+        "img": "https://images.dlivros.org/Walter-Campos-de-Carvalho/lua-vem-asia-walter-campos-carvalho_medium.webp"
+    },  
+    {   
+        "id": "14",
+        "titulo": "A Lebre e a Tartaruga",
+        "autor": "Esopo",
+        "data_publicacao": "Antiguidade",
+        "genero": "Fábula",
+        "img": "https://editorapedaletra.com.br/media/catalog/product/cache/d51e17e3f97aa21e3ce0a3f7526ec2e9/w/h/whatsapp_image_2021-03-22_at_16.59.54_1_.jpeg"
+    },  
+    {   
+        "id": "15",
+        "titulo": "A Ilíada",
+        "autor": "Homero",
+        "data_publicacao": "Antiguidade",
+        "genero": "Mitologia",
+        "img": "https://m.media-amazon.com/images/I/91VS8lg9+QL._AC_UF1000,1000_QL80_.jpg"
+    }   
+] 
+}
