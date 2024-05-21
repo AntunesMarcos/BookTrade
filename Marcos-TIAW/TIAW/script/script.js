@@ -3,7 +3,7 @@ const FocoInput = document.getElementById('name');
 window.onload = Onload;
 
 let index = 0;
-const images = ['../img/banner10.png', '../img/banner11.png','../img/banner12.png', '../img/banner13.png'];
+const images = ['./img/banner10.png', './img/banner11.png','./img/banner12.png', './img/banner13.png'];
 const img = document.getElementById('imagens');
 
 

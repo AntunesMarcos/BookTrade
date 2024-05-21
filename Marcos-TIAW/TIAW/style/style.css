@@ -170,7 +170,11 @@ section{
 #carrossel img{
     border-radius: 10px;
 }
+#imagens{
+        height: 450px;
+}
 .fade {
+    cursor: pointer;
     transition: opacity 0.5s ease;
 }
 @media screen and (max-width:570px){
