@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de usuario </title>
+    <!-- Adicionando Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="icon" href="../../../Marcos TIAW/img/iconeAzul.png" type="image/x-icon">
+  <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+    <header>
+        <div id="div">
+        <a href="../../../TIAW/index.html"> <img src="../img/Logo.png" id="logo" alt="logo" "></a>
+        </div>
+        <div id="nome">
+          Cadastro de Usuário
+        </div>
+    </header>
+    <main>
+        <div id="container">
+        <form>
+            <div class="form-group">
+                <label for="Nomecompleto">Nome Completo:</label>
+                <input type="text" class="form-control" id="nomec" placeholder="Digite seu nome" required=" required">
+              </div>  
+            <div class="form-group">
+                <label for="cpf">CPF:</label>
+                <input type="text" class="form-control" id="cpf" placeholder="000.000.000-00" required=" required">
+            </div>  
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" autocomplete="off" required=" required">
+              </div>
+              <div class="form-group">
+                <label for="confirmacaoemail">Confirmação E-mail:</label>
+                <input type="email" class="form-control" id="confirmacaoemail" placeholder="Confirme seu e-mail" required=" required">
+              </div>
+              <div class="form-group">
+                <label for="idade">Idade:</label>
+                <input type="text" class="form-control" id="idade" placeholder="Informe sua Idade" required=" required">
+              </div>
+              <div class="form-group">
+                <label for="cidade">Cidade:</label>
+                <input type="text" class="form-control" id="cidade" placeholder="Digite sua cidade" required=" required">
+              </div>
+              <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="text" class="form-control" id="telefone" placeholder="(00) 00000-0000" required=" required">
+              </div>
+              <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" required=" required">
+              </div>    
+              <div class="form-group">
+                <label for="confirmacaosenha">Confirmação Senha:</label>
+                <input type="password" class="form-control" id="confirmacaosenha" placeholder="Confirme sua senha" required=" required">
+              </div>  
+            <!-- <button type="button" class="btn  btn-primary" >Salvar</button>-->
+              <input type="button" value="Salvar" id="btnsalvar" onclick="return envia()" name="go" >
+        </form>
+      </div>
+
+    </main> 
+    <footer>
+        <p>© Copyright 2024</p>
+    </footer>
+    <script src="../JavaScrypt/cadastro.js"></script>
+</body>
+</html>

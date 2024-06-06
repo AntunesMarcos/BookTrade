@@ -1,0 +1,133 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{font-family: Helvetica;}
+header{
+    display: flex;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #1c0d3d;
+    color: white;
+    justify-content:space-between;
+    align-items: center;
+}
+#nome-do-site{
+    font-size: 50px;
+}
+main{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: larger;
+    background-color: rgb(201, 200, 200);
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+#nome{
+    height: 25px;
+    width: 330px;
+}
+#CPF{
+    height: 25px;
+    width: 343px;
+}
+#cidade{
+    height: 25px;
+    width: 321px;
+}
+
+#telefone{
+    height: 25px;
+    width: 308px;
+}
+#email{
+    height: 25px;
+    width: 327px;
+}
+#data{width: 150px;}
+#salvar{
+    margin-top: 20px;
+    height: 35px;
+    width: 80px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+    height: 50px;
+    margin-top: 20px;
+    padding: 0;
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 0.548);
+    position: fixed;
+    bottom: 0;
+}
+@media screen and (max-width:570px){
+    main{margin:30px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+   #formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: x-large;
+    background-color: rgb(201, 200, 200);
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    #nome{
+        height: 28px;
+        width: 320px;
+    }
+    #CPF{
+        height: 28px;
+        width: 320px;
+    }
+    #cidade{
+        height: 28px;
+        width: 320px;
+    }
+    
+    #telefone{
+        height: 28px;
+        width: 308px;
+    }
+    #email{
+        height: 28px;
+        width: 320px;
+    }
+    #data{
+        height: 30px;
+        width: 150px;}
+    #salvar{
+        margin-top: 20px;
+        height: 35px;
+        width: 80px;
+    }
+    #salvar{
+        font-size: x-large;
+        height: 35px;
+        width: 90px;
+    }
+    
+}
