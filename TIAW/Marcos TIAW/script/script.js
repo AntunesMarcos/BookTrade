@@ -19,8 +19,7 @@ function nextImage() {
 }
     
 nextImage();
-setInterval(nextImage, 5000);
-
+setInterval(nextImage, 5000); 
 
 function Onload() {
     getBooks();
@@ -34,8 +33,30 @@ function Onload() {
             });
         }
     });
-}
 
+
+    if (localStorage.getItem("token") == null) {
+        document.getElementById("boxLogin").innerHTML += ("<a  id='a-criar-conta' href='../Enzo TIAW/HTML/login.html'><p id='criar-conta'>Criar conta</p></a>"+ "<img src='../Marcos TIAW/img/User-Icon.png' id='icone-usuario' alt='icone de usuario'></a>");
+    } else {
+        let user = JSON.parse(localStorage.getItem("users"))[0];
+        let nome = user.nome;
+
+        document.getElementById("boxLogin").innerHTML += ("<p id='criar-conta'>Olá, " + nome + "</p>" + "<a href='../../Diogo TIAW/Html/Perfil-do-Usuario.html'><img src='../Marcos TIAW/img/User-Icon.png' id='icone-usuario' alt='icone de usuario'></a>");
+
+        var imagemPerfil = document.getElementById('icone-usuario');
+        var dataURL = localStorage.getItem('imagemPerfil');
+
+        if (dataURL) {
+            imagemPerfil.src = dataURL;
+            imagemPerfil.style.width = '70px';
+            imagemPerfil.style.height = '70px';
+            imagemPerfil.style.borderRadius = '50%';
+            imagemPerfil.style.objectFit = 'cover';
+        } else {
+            imagemPerfil.src = '../Marcos TIAW/img/User-Icon.png';
+        }
+    }
+}
 
 document.getElementById('gen').addEventListener('click', () => {
     document.getElementById('books-list').innerHTML = '';
@@ -168,5 +189,4 @@ FocoInput.addEventListener('blur', () => {
 
 
 }
-
 

@@ -5,13 +5,14 @@ document.addEventListener("DOMContentLoaded", function() {
     // Se não estiver definido, gera o conteúdo do perfil do usuário
     if (!perfilUsuario) {
         // Define o objeto perfilUsuario com os dados padrão
+        let user = JSON.parse(localStorage.getItem("users"))[0];
         var perfilPadrao = {
-            nome: "João da Silva",
-            cpf: "123.456.789-00",
-            cidade: "São Paulo",
-            telefone: "(11) 91234-5678",
-            email: "joaosilva@gmail.com",
-            dataNascimento: "01/01/1990"
+            nome: user.nome,
+            cpf: user.cpf,
+            cidade: user.cidade,
+            telefone: user.telefone,
+            email: user.email,
+            dataNascimento: user.data
         };
 
         // Converte o objeto em JSON
@@ -23,7 +24,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Exibe os dados do perfil do usuário na página
     exibirDadosPerfil();
+
+    
 });
+
 
 function exibirDadosPerfil() {
     // Recuperando os dados do perfil do usuário do localStorage
@@ -71,9 +75,12 @@ var excluirButton = document.getElementById("excluir");
 excluirButton.addEventListener("click", function() {
     // Limpar os dados do localStorage
     localStorage.removeItem("perfilUsuario");
+    localStorage.removeItem("imagemPerfil");
+    localStorage.removeItem("users");
+    localStorage.removeItem("token");
 
     // Exibir mensagem de confirmação
     alert("Dados do perfil excluídos com sucesso!");
     // Redirecionar para a página inicial
-    window.location.href = "index.html";
+    window.location.href = "../../Marcos TIAW/index.html";
 });

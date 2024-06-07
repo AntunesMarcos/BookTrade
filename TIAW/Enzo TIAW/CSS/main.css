@@ -16,10 +16,8 @@ header{
     align-items: center;
 }
 #nome{
-    flex: 2;
-    display: flex;
     font-size: 50px;
-    margin-right: 28rem;
+    margin-right: 30rem;
 }
 footer {
     display: flex;
@@ -46,11 +44,15 @@ form{
 }
 
 .form-control{
-    max-width: 35%;
     position: absolute;
-    margin-left: 10rem;
-    margin-bottom: 15rem;
-        
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    width: 35%; 
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
 }
 #logo{ 
     width: 80px; 
@@ -63,11 +65,17 @@ form{
 
 #btnsalvar{
     border-radius: 5px;
-    margin-left: 30rem;
     margin-top: 15px;
     background: #1c0d3d;
     width: 35%;
     color: white    ;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    width: 35%; 
+    padding: 8px;
+        
 }
 @media (max-width: 1350px) {
     #nome{
@@ -81,9 +89,7 @@ form{
         margin-right: 15rem;
     }
 
-    #btnsalvar{
-        margin-left: 15rem;
-    }
+
 }
 
 @media (max-width: 640px) {
@@ -91,8 +97,12 @@ form{
         font-size: 25px;
         margin-right: 10rem;
     }
-    #btnsalvar{
-        margin-left: 10rem;
+    
+
+@media (max-width: 550px){
+    .form-control{
+        position: absolute;
+        margin-left: 5rem;
     }
 }
 
@@ -101,9 +111,10 @@ form{
         font-size: 25px;
         margin-right: 5rem;
     }
-    #btnsalvar{
-        margin-left: 10rem;
+    .form-control{
+        margin-right: 5rem;
     }
+
 }
 
 @media (max-width: 380px) {
@@ -111,8 +122,9 @@ form{
         font-size: 25px;
         margin-right: 2rem;
     }
-    #btnsalvar{
-        margin-left: 10rem;
+    .form-control{
+        margin-left: 5rem;
     }
 }
 
+}

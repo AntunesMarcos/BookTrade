@@ -4,9 +4,24 @@ body{
     margin: 0;
     overflow-x: hidden;
 }
-
-
+#boxLogin{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#a-criar-conta{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#criar-conta{
+    color: white;
+    width: 100px;
+}
 header{
+    flex: 1;
     display: flex;
     height: 100px;
     margin: 0;
@@ -56,10 +71,12 @@ footer {
 .botao-buscar{
     display: none;
 }
-#icone-usuario{
-    width: 80px;
-    padding-right: 20px;
+#icone-usuario {
+    width: 100px;
+
+    margin-right: 20px;
 }
+
 article{
     display: flex;
 }
@@ -260,10 +277,22 @@ section{
     #carrossel img{
         width: 500px;
     }
-}
+    #boxLogin{
+        margin-right: 20px;
+    }
+    body{
+    overflow-x: hidden;
+    }
 @media screen and (max-width: 700px){
     #carrossel img{
         width: 400px;
+    }
+    #boxLogin{
+        flex-direction: column;
+    }
+
+    #icone-usuario img{
+        padding: 0px;
     }
 }
 @media screen and (max-width: 630px){
@@ -312,4 +341,5 @@ section{
         overflow-x: hidden;
     }
 
+}
 }

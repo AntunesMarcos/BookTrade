@@ -10,13 +10,13 @@
 <body>
     <header>
         <div>
-        <img src="../Img/Logo.png" alt="logo" style="width: 80px; height: 80px; padding-left: 20px;">
+        <a href="../../Marcos TIAW/index.html"><img src="../Img/Logo.png" alt="logo" style="width: 80px; height: 80px; padding-left: 20px;"></a>
         </div>
         <div id="nome">
             Booktrade 
         </div>
         <div>
-        <img src="../Img/User-Icon.png" alt="" style="width: 80px; padding-right: 20px;">
+        <img id="icone-usuario" src="../Img/User-Icon.png" alt="" style="width: 100px; height: 65px; padding-right: 20px;">
         </div>
     </header>
     <main>
@@ -36,27 +36,29 @@
         </div>
         <script>
         //alterar imagem
-         window.onload = function() {
+        window.onload = function() {
                 var imagemPerfil = document.getElementById('imagemPerfil');
                 var dataURL = localStorage.getItem('imagemPerfil');
                 if (dataURL) {
                     imagemPerfil.src = dataURL;
                 }
             };
-         document.getElementById('btnSalvar').addEventListener('click', function() {
+        document.getElementById('btnSalvar').addEventListener('click', function() {
                 var novaImagemInput = document.getElementById('novaImagem');
                 var imagemPerfil = document.getElementById('imagemPerfil');
+                var icon = document.getElementById('icone-usuario');
 
                 // Verifica se uma imagem foi selecionada
                 if (novaImagemInput.files.length > 0) {
                     var novaImagem = novaImagemInput.files[0];
                     var reader = new FileReader();
-
+                    
                     reader.onload = function(e) {
                         var dataURL = e.target.result;
                         localStorage.setItem('imagemPerfil', dataURL);
-                        imagemPerfil.src = dataURL; // Atualiza a imagem do perfil
-                        alert('Imagem salva e atualizada!');
+                        imagemPerfil.src = dataURL; 
+                        icon.src = dataURL
+                        // Atualiza a imagem do perfil
                     };
 
                     reader.readAsDataURL(novaImagem);

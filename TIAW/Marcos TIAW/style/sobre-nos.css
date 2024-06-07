@@ -10,7 +10,8 @@ header{
     align-items: center;
 }
 #icone-usuario{
-    width: 80px;
+    width: 100px;
+    height: 65px;
     padding-right: 20px;
 }
 #logo-principal{

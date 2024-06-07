@@ -1,5 +1,7 @@
 const form = document.querySelector("form");
 const nomeInput = document.querySelector("#nomec");
+const sobrenomeInput = document.querySelector("#sobrenome");
+const dataInput = document.querySelector("#data");
 const cpfInput = document.querySelector("#cpf");
 const emailInput = document.querySelector("#email");
 const confirmacaoemailInput = document.querySelector("#confirmacaoemail");
@@ -12,7 +14,9 @@ const confirmacaosenhaInput = document.querySelector("#confirmacaosenha");
 
 function envia() {
     var nome = nomeInput.value;
+    var sobrenome = sobrenomeInput.value;
     var senha = senhaInput.value;
+    var nascimento = dataInput.value;
     var email = emailInput.value;
     var cpf = cpfInput.value;
     var cidade = cidadeInput.value;
@@ -20,7 +24,7 @@ function envia() {
     var telefone = telefoneInput.value;
     var confirmacaoemail = confirmacaoemailInput.value;
     var confirmacaosenha = confirmacaosenhaInput.value;
-    if(nome == '' || senha == '' || email == '' || cpf == '' || cidade == '' || idade == '' || telefone == '' || confirmacaoemail == ''|| confirmacaosenha == '') {
+    if(nome == '' || sobrenome == '' || nascimento == ''|| senha == '' || email == '' || cpf == '' || cidade == '' || idade == '' || telefone == '' || confirmacaoemail == ''|| confirmacaosenha == '') {
         alert("Preencha todos os campos!");
     }
     else if(email != confirmacaoemail){
@@ -43,6 +47,10 @@ cpfInput.addEventListener('keypress', () => {
     else if (cpflength === 11) {
         cpfInput.value += '-'
     }
+    if(cpflength > 13){
+        cpfInput.value = cpfInput.value.substring(0,13)
+    }
+
 })
 
 //Mascara de telefone
@@ -52,16 +60,22 @@ telefoneInput.addEventListener('keypress', () => {
         telefoneInput.value +='('
     }
     else if (telefonelength === 3) {
-        telefoneInput.value += ')'
+        telefoneInput.value += ') '
     }
+
     else if (telefonelength === 9) {
         telefoneInput.value += '-'
+    }
+    else if(telefonelength > 13){
+        telefoneInput.value = telefoneInput.value.substring(0,13)
     }
 })
 
 function salvar(){
     let novousuario = new Object();
     novousuario.nome = nomeInput.value.trim();
+    novousuario.sobrenome = sobrenomeInput.value.trim();
+    novousuario.data = dataInput.value.trim();
     novousuario.cpf = cpfInput.value.trim();
     novousuario.email = emailInput.value.trim();
     novousuario.confirmacaoemail = confirmacaoemailInput.value.trim();
@@ -76,7 +90,6 @@ function salvar(){
     localStorage.setItem("users", JSON.stringify(users));
 
     form.reset();
-    window.location.href = "../HTML/mostradecadastros.html";
+    window.location.href = "../../Enzo TIAW/HTML/login.html";
 }
-
 

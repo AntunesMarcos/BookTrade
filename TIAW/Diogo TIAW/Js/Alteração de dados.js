@@ -22,6 +22,11 @@ document.addEventListener("DOMContentLoaded", function() {
     emailInput.value = perfilUsuario.email;
     dataInput.value = perfilUsuario.dataNascimento;
 
+    dataInput.addEventListener('input', function() {
+                if (dataInput.value.length > 10) {
+                    dataInput.value = dataInput.value.slice(0, 10);
+                }
+            });
     // Adicionando um event listener para o botão "Salvar"
     var salvarButton = document.getElementById("salvar");
     salvarButton.addEventListener("click", function() {
@@ -40,7 +45,6 @@ document.addEventListener("DOMContentLoaded", function() {
         localStorage.setItem("perfilUsuario", perfilUsuarioJSON);
 
         // Exibir mensagem de confirmação
-        alert("Dados do perfil atualizados com sucesso!");
         window.location.href = "Perfil-do-Usuario.html";
 
     });

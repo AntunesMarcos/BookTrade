@@ -22,9 +22,17 @@
         <div id="container">
         <form>
             <div class="form-group">
-                <label for="Nomecompleto">Nome Completo:</label>
-                <input type="text" class="form-control" id="nomec" placeholder="Digite seu nome" required=" required">
-              </div>  
+                <label for="Nomecompleto">Nome:</label>
+                <input type="text" class="form-control" id="nomec" placeholder=" Digite seu nome" required=" required">
+              </div> 
+              <div class="form-group">
+                <label for="Nomecompleto">Sobrenome:</label>
+                <input type="text" class="form-control" id="sobrenome" placeholder="Digite seu sobrenome" required=" required">
+              </div> 
+              <div class="form-group">
+                <label for="Nomecompleto">Data de nascimento: </label>
+                <input type="date" class="form-control" id="data" placeholder="Digite seu sobrenome" required=" required">
+              </div> 
             <div class="form-group">
                 <label for="cpf">CPF:</label>
                 <input type="text" class="form-control" id="cpf" placeholder="000.000.000-00" required=" required">
@@ -57,9 +65,8 @@
                 <label for="confirmacaosenha">Confirmação Senha:</label>
                 <input type="password" class="form-control" id="confirmacaosenha" placeholder="Confirme sua senha" required=" required">
               </div>  
-            <!-- <button type="button" class="btn  btn-primary" >Salvar</button>-->
-              <input type="button" value="Salvar" id="btnsalvar" onclick="return envia()" name="go" >
         </form>
+        <button value="Salvar" id="btnsalvar" onclick="return envia()" name="go"> salvar </button>
       </div>
 
     </main> 

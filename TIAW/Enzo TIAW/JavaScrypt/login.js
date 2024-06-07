@@ -34,8 +34,9 @@
         const credenciaisValidas = verificarCredenciais(email, senha);
         
         if (credenciaisValidas) {
-        
-            alert('Credenciais válidas! Usuário encontrado.');
+            const token = Math.random().toString(36).substr(2);
+            localStorage.setItem('token', token);
+            window.location.href = "../../Marcos TIAW/index.html";
         } else {
             alert('Credenciais inválidas! Usuário não encontrado.');
         }

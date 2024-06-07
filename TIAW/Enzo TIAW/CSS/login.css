@@ -70,12 +70,9 @@ input#senha {
 
 div#registro p {
     margin-bottom: 10px;
-    text-align: center;
-    margin-right: 17%;
-    margin-left: 15%;
-
-
-
+    display: inline-block;
+    margin-left: 10px;
+    font-size: xx-small;
 }
 
 div#registro a {
