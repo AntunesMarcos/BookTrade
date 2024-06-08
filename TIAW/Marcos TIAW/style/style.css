@@ -53,6 +53,9 @@ footer {
     height: 80px;
     padding-left: 20px;
 }
+#add-livro{
+    cursor: pointer;
+}
 #pesquisa{
     display: flex;
     width: 100%;

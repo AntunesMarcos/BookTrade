@@ -34,6 +34,15 @@ function Onload() {
         }
     });
 
+    const verificaçao = document.getElementById('add-livro');
+    verificaçao.addEventListener('click', () => { 
+        if (localStorage.getItem("token") == null) {
+            alert("Você precisa estar logado para adicionar um livro!");
+            window.location.assign("../../Enzo TIAW/HTML/login.html");
+        } else {
+            window.location.href = "../../Rafael TIAW/views/cadastroLivro.html";
+        }
+    });
 
     if (localStorage.getItem("token") == null) {
         document.getElementById("boxLogin").innerHTML += ("<a  id='a-criar-conta' href='../Enzo TIAW/HTML/login.html'><p id='criar-conta'>Criar conta</p></a>"+ "<img src='../Marcos TIAW/img/User-Icon.png' id='icone-usuario' alt='icone de usuario'></a>");
