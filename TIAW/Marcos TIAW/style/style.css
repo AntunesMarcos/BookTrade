@@ -56,6 +56,11 @@ footer {
 #add-livro{
     cursor: pointer;
 }
+#icone-seta{
+    margin-top: 6px;
+    
+    margin-left: 10px;
+}
 #pesquisa{
     display: flex;
     width: 100%;

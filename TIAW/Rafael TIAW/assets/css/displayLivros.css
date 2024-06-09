@@ -25,7 +25,11 @@ main{
     margin-top: 5px;
     margin-left: 3px;
 }
-
+.card-img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover; 
+}
 
 
 @media (max-width:720px){

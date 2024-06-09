@@ -78,6 +78,7 @@ excluirButton.addEventListener("click", function() {
     localStorage.removeItem("imagemPerfil");
     localStorage.removeItem("users");
     localStorage.removeItem("token");
+    localStorage.removeItem("livros");
 
     // Exibir mensagem de confirmação
     alert("Dados do perfil excluídos com sucesso!");
