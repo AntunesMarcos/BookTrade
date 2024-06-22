@@ -1,0 +1,199 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{font-family: Helvetica}
+header{
+    display: flex;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #1c0d3d;
+    color: white;
+    justify-content:space-between;
+    align-items: center;
+}
+.link-sem-estilo {
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    color: inherit; /* Mantém a cor do texto padrão */
+}
+#nome{
+    font-size: 50px;
+    text-decoration: none; /* Remove a sublinhado */
+    color: inherit; /* Mantém a cor do texto */
+}
+main {
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+}
+#esquerdo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#imagemPerfil {
+    width: 250px; /* Largura da imagem de perfil */
+    height: 250px; /* Altura da imagem de perfil */
+    border-radius: 50%; /* Transforma a imagem em um círculo */
+    object-fit: cover; /* Garante que a imagem cubra completamente a área designada */
+    cursor: pointer; /* Muda o cursor para indicar que a imagem é clicável */
+}
+#preview-imagem{
+    cursor: pointer;
+}
+#foto {
+    justify-content: center;
+    margin-right: 20px;
+    width:  260px;
+    height: 260px;
+    overflow: hidden; /* Garante que a imagem não ultrapasse os limites do contêiner */
+    border-radius: 50%; /* Define a borda redonda */    
+    text-align: center; /* Centraliza os elementos dentro da div */
+}
+#btnSalvar{
+    border-radius: 10px;
+    font-size: medium;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+}
+#biblioteca{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+#icone-usuario{
+ display: none;
+}
+#novaImagem{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+#direito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 250px;
+}
+#direito{
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(201, 200, 200);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: larger;
+    width: 130%;
+    height: 80%;
+    padding: 30px;
+    border-radius: 10px;
+}
+#info {
+    width: 100%;
+}
+.info-item{
+    margin-bottom: 15px;
+}
+#alt {
+    background-color:  rgb(241, 241, 241);
+    width: 150px;
+    height: 35px;
+    font-size: medium;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer; /* Adiciona um cursor de ponteiro para indicar que o elemento é clicável */
+
+}
+#excluir{
+    background-color:  rgb(241, 241, 241);
+    width: 120px;
+    height: 35px;
+    font-size: medium;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+    cursor: pointer; /* Adiciona um cursor de ponteiro para indicar que o elemento é clicável */
+
+}
+#excluir:hover {
+    color: red; /* Muda a cor da fonte para vermelho ao passar o mouse */
+    border-color: red; /* Muda a cor da borda para vermelho ao passar o mouse */
+}
+#foto {
+    display: flex;
+    margin-right: 20px; /* Adiciona uma margem à direita para separar a foto do conteúdo */
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+    height: 50px;
+    margin-top: 20px;
+    padding: 0;
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 0.548);
+    position: fixed;
+    bottom: 0;
+}
+@media screen and (max-width:570px){
+main{margin:30px;
+}
+#nome{font-size:35px;}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#direito,#esquerdo{
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+#cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#direito{
+    background-color: rgb(201, 200, 200);
+    width: 330px;
+    padding-left: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);    
+    margin-top: 5px;
+    margin-bottom: 0; 
+    font-size: large;
+    height: 250px;
+}
+#foto{
+    margin-bottom: 10px;
+}
+#add{
+    width: 50px;
+    height: 40px;
+    font-size: x-large;
+    margin-top:30px;
+    margin-bottom: 15px;
+}
+#botoes{
+    margin-top: 0px;   
+}
+#alt{
+    width: 160px;
+    height: 40px;
+    font-size:medium;
+}
+#foto{
+    height: 200px;
+    width: 200px;
+    justify-content: center;
+}
+p{font-weight: bold;
+}
+}

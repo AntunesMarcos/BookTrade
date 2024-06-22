@@ -1,0 +1,165 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    font-family: Helvetica;
+    font-size:large;
+}
+header{
+    display: flex;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #1c0d3d;
+    color: white;
+    justify-content:space-between;
+    align-items: center;
+}
+.link-sem-estilo {
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    color: inherit; /* Mantém a cor do texto padrão */
+}
+#nome-do-site{
+
+    text-decoration: none; /* Remove a sublinhado */
+    color: inherit; /* Mantém a cor do texto */
+    font-size: 50px;
+}
+main{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    background-color: rgb(201, 200, 200);
+    width: 60%;
+    height: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+#formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    margin-top: 10px;
+}
+input{
+    font-size: large;
+    border-radius: 10px;
+    border: none;
+}
+#nome{
+    height: 35px;
+    width: 400px;
+}
+#CPF{
+    height: 35px;
+    width: 410px;
+}
+#cidade{
+    height: 35px;
+    width: 386px;
+}
+
+#telefone{
+    height: 35px;
+    width: 375px;
+}
+#email{
+    height: 35px;
+    width: 400px;
+}
+#data{width: 150px;}
+#salvar{
+    font-size: large;
+    margin-top: 40px;
+    height: 40px;
+    width: 90px;
+    border-radius: 10px;
+    background-color:  rgb(241, 241, 241);
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+    height: 50px;
+    margin-top: 20px;
+    padding: 0;
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 0.548);
+    position: fixed;
+    bottom: 0;
+}
+#imagem-sla{
+    display: none;
+}
+  
+@media screen and (max-width:570px){
+    main{margin:30px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+   .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: x-large;
+    background-color: rgb(201, 200, 200);
+    width: 320px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    #nome{
+        height: 28px;
+        width: 320px;
+    }
+    #CPF{
+        height: 28px;
+        width: 320px;
+    }
+    #cidade{
+        height: 28px;
+        width: 320px;
+    }
+    
+    #telefone{
+        height: 28px;
+        width: 308px;
+    }
+    #email{
+        height: 28px;
+        width: 320px;
+    }
+    #data{
+        height: 30px;
+        width: 150px;}
+    #salvar{
+        margin-top: 20px;
+        height: 35px;
+        width: 80px;
+    }
+    #salvar{
+        font-size: x-large;
+        height: 35px;
+        width: 90px;
+    }
+    
+}

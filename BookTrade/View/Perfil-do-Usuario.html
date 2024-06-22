@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Assets/Css/Perfil-do-Usuario.css">
+    <link rel="icon" href="/Assets/Img/iconeAzul.png" type="image/x-icon">
+    <title>Booktrade - Perfil do Usuario</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="../index.html"><img src="/Assets/Img/Logo.png" alt="logo" style="width: 80px; height: 80px; padding-left: 20px;"></a>
+        </div>
+        <a href="../index.html" class="link-sem-estilo">
+            <div id="nome">
+                Booktrade 
+            </div>
+        </a>
+        <div>
+            <img id="icone-usuario" src="/Assets/Img/User-Icon.png" alt="" style="width: 100px; height: 65px; padding-right: 20px;">
+        </div>
+    </header>
+    <main>
+        <div id="esquerdo">
+            <div id="cont">
+                <div id="foto">
+                    <label for="novaImagem">
+                        <img id="imagemPerfil" src="/Assets/Img/User-Icon2.png" alt="Foto de Perfil">
+                    </label>
+                    <input type="file" id="novaImagem" accept="image/*" style="display: none;">
+                </div>
+                <div id="preview-imagem"></div> <!-- Div para exibir preview da imagem -->
+                <button id="btnSalvar">Salvar Foto</button> <!-- Botão para salvar a foto -->
+            </div>
+            <a href="/View/displayLivros.html">
+                <div id="biblioteca">
+                    <img id="biblioteca" src="/Assets/Img/livro.png" style="width: 70px; height: 70px;">
+                    Meus Livros
+                </div>
+            </a>
+        </div>
+        <div id="direito">
+            <div id="info">
+                <h2>Suas Informações</h2>
+            </div>
+            <div id="botoes">    
+                <button id="alt" onclick="abrirPagina()">Alterar seus Dados</button>
+                <button id="excluir">Excluir Conta</button>
+            </div>
+        </div>
+        <script>
+            // Função para exibir preview da imagem
+            function previewImagem() {
+                var novaImagemInput = document.getElementById('novaImagem');
+                var preview = document.getElementById('preview-imagem');
+                var imagemPerfil = document.getElementById('imagemPerfil');
+
+                // Verifica se uma imagem foi selecionada
+                if (novaImagemInput.files && novaImagemInput.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function(e) {
+                        imagemPerfil.src = e.target.result;
+                        preview.innerHTML = ''; // Limpa o preview
+                    };
+
+                    reader.readAsDataURL(novaImagemInput.files[0]);
+                }
+            }
+
+            // Evento para chamar a função de preview ao selecionar uma imagem
+            document.getElementById('novaImagem').addEventListener('change', previewImagem);
+
+            // Evento para salvar a imagem
+            document.getElementById('btnSalvar').addEventListener('click', function() {
+                var novaImagemInput = document.getElementById('novaImagem');
+                var imagemPerfil = document.getElementById('imagemPerfil');
+                var icon = document.getElementById('icone-usuario');
+
+                // Verifica se uma imagem foi selecionada
+                if (novaImagemInput.files.length > 0) {
+                    var novaImagem = novaImagemInput.files[0];
+                    var reader = new FileReader();
+                    
+                    reader.onload = function(e) {
+                        var dataURL = e.target.result;
+                        localStorage.setItem('imagemPerfil', dataURL);
+                        imagemPerfil.src = dataURL; 
+                        icon.src = dataURL;
+                        // Atualiza a imagem do perfil
+                        alert('Imagem atualizada!')
+                    };
+
+                    reader.readAsDataURL(novaImagem);
+                } else {
+                    alert('Por favor, selecione uma imagem.');
+                }
+            });
+
+            // Carregar imagem do localStorage ao carregar a página
+            window.onload = function() {
+                var imagemPerfil = document.getElementById('imagemPerfil');
+                var dataURL = localStorage.getItem('imagemPerfil');
+                if (dataURL) {
+                    imagemPerfil.src = dataURL;
+                }
+            };
+
+            // Abrir página de alteração de dados
+            function abrirPagina() {
+                window.location.href = "Alteração de dados.html";
+            }
+        </script>
+    </main>
+    <script src="/Assets/Scripts/Perfil do usuario.js"></script>
+
+    <footer>
+        <p>© Copyright 2024</p>
+    </footer>
+</html>

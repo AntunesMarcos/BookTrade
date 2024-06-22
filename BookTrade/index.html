@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookTrade</title>
+    <link rel="stylesheet" href="/Assets/Css/style.css">
+    
+    <link rel="icon" href="/Assets/Img/iconeAzul.png" type="image/x-icon">
+    <script src="/Assets/Scripts/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="/Assets/Img/Logo.png" alt="logo da loja" id="logo-principal">
+        </div>
+        <div id="nome-site">
+            <strong>Booktrade</strong> 
+        </div>
+        <div id="pesquisa">
+            <form action="">
+                <input type="text" id="name" name="name" value="Buscar" > 
+            </form>    
+        </div>
+        <div>
+        <button class="botao-buscar" onclick="toggleSearch()">&#128269;</button>
+        </div>
+        <div id="boxLogin">
+            
+        </div>
+    </header>
+    <article>
+        <aside>
+        <h1 id="gen">Generos</h1>
+        <ul id="genres-list">
+            
+        </ul>
+    </aside>
+    <main>
+        <div id="adicionar-livros">
+            <h1><p id="add-livro">Adicionar Livros</p></h1>
+        </div>
+        <div id="carrossel">
+                    <img class="fade" src="/Assets/Img/banner10.png" alt="Imagem 1" id="imagens">
+        </div>
+        
+        <section id="books-list">
+            
+        </section>
+    </main>
+    
+    </article>
+    <div id="sobre-nos">
+            <h1><a href="/View/sobre-nos.html">Quem Nós Somos </a></h1><a href="/Public/View/sobre-nos.html"> <svg xmlns="http://www.w3.org/2000/svg" id="icone-seta" width="30px" height="30px" viewBox="0 0 64 64"><path fill="currentColor" d="M53.213 10.786c-11.715-11.715-30.711-11.715-42.426 0c-11.716 11.717-11.716 30.711 0 42.428c11.715 11.715 30.711 11.715 42.426 0c11.716-11.717 11.716-30.711 0-42.428M45 41.132l-7.585-7.414l-13.458 13.281L17 39.954l13.218-13.391l-7.343-7.564H45z"/></svg></a>
+        </div>
+    <footer>
+        <p>© Copyright 2024</p>
+    </footer>
+
+</body>
+</html>

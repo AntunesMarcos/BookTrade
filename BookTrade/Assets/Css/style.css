@@ -1,0 +1,380 @@
+body{
+    font-family: Helvetica;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+#boxLogin{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#a-criar-conta{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#criar-conta{
+    color: white;
+    width: 100px;
+}
+header{
+    flex: 1;
+    display: flex;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background-color: #1c0d3d;
+    color: white;
+    justify-content:space-between;
+    align-items: center;
+}
+#nome-site{display: none;}
+#nome{
+    font-size: 50px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+    height: 50px;
+    padding: 0;
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 0.548);
+    bottom: 0;
+}
+
+#logo-principal{
+    width: 80px;
+    height: 80px;
+    padding-left: 20px;
+}
+#add-livro{
+    cursor: pointer;
+}
+#icone-seta{
+    margin-top: 6px;
+    
+    margin-left: 10px;
+}
+#pesquisa{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    margin: 0%;
+}
+#pesquisa input[type=text]{
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.botao-buscar{
+    display: none;
+}
+#icone-usuario {
+    width: 100px;
+
+    margin-right: 20px;
+}
+
+article{
+    display: flex;
+}
+aside{
+    flex: 1;
+    padding: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px ;
+}
+main{
+
+    padding-top: 30px;
+    flex: 9;
+}
+.card:hover { 
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: 0.3s;
+}
+.card {     
+    margin: 10px;   
+    width: 300px;   
+    border-radius: 8px; 
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#info {
+    padding: 20px;
+    height: 150px;
+}
+
+#info h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #1c0d3d;
+}
+
+#info p {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+#carrosel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#carrosel img{
+    width: 300px;
+    border-radius: 10px;
+}
+#adicionar-livros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#adicionar-livros a{
+    text-decoration: none;
+    color:black;
+}
+#genres-list li {
+    font-size: 20px;
+
+    list-style: none;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#genres-list li:hover {
+    transform: scale(1.02);
+}
+
+#sobre-nos{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sobre-nos a{
+    text-decoration: none;
+    color:black;
+}
+#gen{
+    font-size: 26px;
+    cursor: pointer;
+}
+#gen:hover{
+    transition: 0.3s;   
+    transform: scale(1.05);
+}
+
+#carrossel{
+    overflow: hidden;
+    text-align: center;
+}
+#carrossel img{
+    border-radius: 10px;
+}
+#imagens{
+        height: 450px;
+}
+.fade {
+    cursor: pointer;
+    transition: opacity 0.5s ease;
+}
+#ver-mais{
+    background-color: #1c0d3d;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 280px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#ver-mais:hover{
+    background-color: #1c0d3d;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+@media screen and (max-width:570px){
+    #carrossel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 300px;
+        height: 200px;
+        }
+    aside{
+        display: none;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    .botao-buscar{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 20px;
+    }
+    #pesquisa{
+        display: none;
+    }
+    #pesquisa input[type=text] {
+        width: 180px; 
+        margin-top: 30px;
+    }
+
+    
+    .botao-buscar {
+        display: inline-block;
+        width: 40px; 
+        height: 40px; 
+        font-size: 25px; 
+    }
+    #carrossel {
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    #carrossel img {
+        width: 100%;
+        height: 100%; 
+        object-fit: cover; 
+        border-radius: 10px;
+    }
+    #nome-site{
+        display: flex;
+        font-size: 35px;
+        
+    }
+
+}
+@media screen and (max-width: 1570px){
+    #carrossel img{
+        width: 800px;
+    }
+    #pesquisa{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 990px){
+    #carrossel img{
+        width: 600px;
+    }
+}
+@media screen and (max-width: 815px){
+    #carrossel img{
+        width: 500px;
+    }
+    #boxLogin{
+        margin-right: 20px;
+    }
+    body{
+    overflow-x: hidden;
+    }
+@media screen and (max-width: 700px){
+    #carrossel img{
+        width: 400px;
+    }
+    #boxLogin{
+        flex-direction: column;
+    }
+
+    #icone-usuario img{
+        padding: 0px;
+    }
+}
+@media screen and (max-width: 630px){
+    #carrossel img{
+        width: 300px;
+        height: 200px;
+    }
+    #pesquisa input[type=text] {
+        width: 300px; 
+
+    }
+    aside{
+        display: none;
+    }
+}
+@media screen and (max-width: 420px){
+    #nome-site{
+        font-size: 26px;
+    }
+    #pesquisa input[type=text] {
+        width: 150px; 
+
+    }
+    #logo-principal{
+        display: none;
+    }
+    main{
+        padding: 0%;
+        margin: 0%;
+    }
+
+}
+@media screen and (max-width: 345px){
+    #nome-site{
+        font-size: 20px;
+    }
+    #pesquisa input[type=text] {
+        width: 100px; 
+
+    }
+    #icone-usuario img{
+    width: 80px;
+
+}
+    body{
+        overflow-x: hidden;
+    }
+
+}
+}

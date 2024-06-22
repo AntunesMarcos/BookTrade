@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+}
+
+.review-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 340px;
+    transition: transform 0.3s ease;
+}
+
+.review-container h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5rem;
+}
+.foto{
+    display: flex;
+    justify-content: center;
+}
+.user-details {
+    margin-bottom: 20px;
+}
+
+.user-avatar {
+    display: flex;
+    margin-left: 30px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-details h2 {
+    font-size: 1.2rem;
+    color: #555;
+    display: flex;
+    justify-content: center;
+}
+
+.rating-stars {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.star {
+    font-size: 2rem;
+    color: #ccc;
+    transition: color 0.2s;
+}
+
+.star.selected {
+    color: gold;
+}
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.rating-result {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.hidden {
+    display: none;
+}
+
+#thank-you {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #28a745;
+}

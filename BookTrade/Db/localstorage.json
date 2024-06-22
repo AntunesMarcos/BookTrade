@@ -1,0 +1,173 @@
+{
+    "livros": [
+        {
+            "id": "1",
+            "titulo": "Orgulho e Preconceito",
+            "autor": "Jane Austen",
+            "data_publicacao": "28/01/1813",
+            "genero": "Romance",
+            "img": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/bb00c70d-1128-4379-b40b-85b7af1e221c.__CR0,0,300,300_PT0_SX300_V1___.png",
+            "estado_publicacao": "Inglaterra",
+            "cidade_publicacao": "Londres",
+            "sinopse": "A história gira em torno da vida da família Bennet, em especial de Elizabeth Bennet, que enfrenta questões sociais, familiares e amorosas na Inglaterra do século XIX. O romance aborda temas como orgulho, preconceito, e a importância das primeiras impressões.",
+            "descricao": "\"Orgulho e Preconceito\" é um dos romances mais célebres de Jane Austen, explorando as complexidades das relações humanas e as convenções sociais da época. A obra é conhecida por seu humor, personagens vibrantes e a crítica sutil à sociedade."
+        },
+        {
+            "id": "2",
+            "titulo": "Neuromancer",
+            "autor": "William Gibson",
+            "data_publicacao": "01/07/1984",
+            "genero": "Ficção",
+            "img": "https://m.media-amazon.com/images/I/61POLNMVhDL._AC_UF1000,1000_QL80_.jpg",
+            "estado_publicacao": "Estados Unidos",
+            "cidade_publicacao": "Nova York",
+            "sinopse": "Case, um hacker que teve seu sistema nervoso danificado por antigos empregadores, é contratado por um misterioso patrão para realizar um último trabalho. O livro é um marco do gênero cyberpunk.",
+            "descricao": "\"Neuromancer\" de William Gibson é um romance pioneiro do gênero cyberpunk que explora um futuro onde a tecnologia e a humanidade se entrelaçam de formas inesperadas e complexas."
+        },
+        {
+            "id": "3",
+            "titulo": "O Hobbit",
+            "autor": "J.R.R. Tolkien",
+            "data_publicacao": "21/09/1937",
+            "genero": "Fantasia",
+            "img": "https://www.lojadobolseiro.com.br/uploads/images/2020/02/76-livro-o-hobbit-capa-smaug-j-r-r-tolkien-1582738560.jpg",
+            "estado_publicacao": "Reino Unido",
+            "cidade_publicacao": "Londres",
+            "sinopse": "Bilbo Bolseiro, um hobbit pacato, é levado em uma aventura épica para ajudar um grupo de anões a recuperar seu lar e tesouro do dragão Smaug.",
+            "descricao": "\"O Hobbit\" é uma obra clássica de fantasia que precede a famosa trilogia \"O Senhor dos Anéis\", trazendo uma rica narrativa de aventura e descobertas."
+        },
+        {
+            "id": "4",
+            "titulo": "O Caso dos Dez Negrinhos",
+            "autor": "Agatha Christie",
+            "data_publicacao": "06/11/1939",
+            "genero": "Mistério",
+            "img": "https://http2.mlstatic.com/D_NQ_NP_641502-MLB48258426514_112021-O.webp",
+            "estado_publicacao": "Reino Unido",
+            "cidade_publicacao": "Londres",
+            "sinopse": "Dez estranhos são convidados para uma ilha remota. Um por um, eles começam a morrer misteriosamente, seguindo a letra de uma antiga canção infantil.",
+            "descricao": "\"O Caso dos Dez Negrinhos\" é considerado um dos maiores clássicos do mistério, apresentando uma trama intrigante e repleta de suspense."
+        },
+        {
+            "id": "5",
+            "titulo": "O Iluminado",
+            "autor": "Stephen King",
+            "data_publicacao": "17/01/1977",
+            "genero": "Suspense",
+            "img": "https://m.media-amazon.com/images/I/81Q+pJi4NjL._AC_UF1000,1000_QL80_.jpg",
+            "estado_publicacao": "Estados Unidos",
+            "cidade_publicacao": "Nova York",
+            "sinopse": "Jack Torrance se torna zelador de inverno do Hotel Overlook, um hotel isolado nas montanhas do Colorado. Lá, ele descobre que o lugar tem uma história sombria e sobrenatural.",
+            "descricao": "\"O Iluminado\" é um dos livros mais famosos de Stephen King, conhecido por sua atmosfera aterrorizante e complexidade psicológica."
+        },
+        {
+            "id": "6",
+            "titulo": "Frankenstein",
+            "autor": "Mary Shelley",
+            "data_publicacao": "01/01/1818",
+            "genero": "Horror",
+            "img": "https://cdn.kobo.com/book-images/bd3fce8f-a9a0-4cb0-a539-d8779090ba51/1200/1200/False/frankenstein-557.jpg",
+            "estado_publicacao": "Reino Unido",
+            "cidade_publicacao": "Londres",
+            "sinopse": "O Dr. Victor Frankenstein cria um ser a partir de partes de cadáveres. Quando a criatura ganha vida, ela busca vingança contra seu criador.",
+            "descricao": "\"Frankenstein\" é um marco na literatura de horror, explorando temas de ambição científica e os limites da ética."
+        },
+        {
+            "id": "7",
+            "titulo": "As Aventuras de Tom Sawyer",
+            "autor": "Mark Twain",
+            "data_publicacao": "30/04/1876",
+            "genero": "Aventura",
+            "img": "https://m.media-amazon.com/images/I/61wXBpb4nzL._AC_UF1000,1000_QL80_.jpg",
+            "estado_publicacao": "Estados Unidos",
+            "cidade_publicacao": "Hartford",
+            "sinopse": "Tom Sawyer, um garoto travesso, vive várias aventuras ao longo do rio Mississippi. Ele enfrenta bandidos, descobre tesouros e aprende lições valiosas sobre a vida.",
+            "descricao": "\"As Aventuras de Tom Sawyer\" é um clássico da literatura americana, capturando a essência da infância e a vida no sul dos Estados Unidos no século XIX."
+        },
+        {
+            "id": "8",
+            "titulo": "Hamlet",
+            "autor": "William Shakespeare",
+            "data_publicacao": "01/01/1600",
+            "genero": "Drama",
+            "img": "https://m.media-amazon.com/images/I/51Cc0654hoL.jpg",
+            "estado_publicacao": "Inglaterra",
+            "cidade_publicacao": "Londres",
+            "sinopse": "O príncipe Hamlet busca vingança contra seu tio, que assassinou seu pai para tomar o trono da Dinamarca. A peça explora temas de traição, vingança e loucura.",
+            "descricao": "\"Hamlet\" é uma das tragédias mais conhecidas de Shakespeare, rica em monólogos poderosos e complexidade emocional."
+        },
+        {
+            "id": "9",
+            "titulo": "As Viagens de Gulliver",
+            "autor": "Jonathan Swift",
+            "data_publicacao": "28/10/1726",
+            "genero": "Comédia",
+            "img": "https://m.media-amazon.com/images/I/61ZwAZ8eB3L._AC_UF1000,1000_QL80_DpWeblab_.jpg",
+            "estado_publicacao": "Irlanda",
+            "cidade_publicacao": "Dublin",
+            "sinopse": "Lemuel Gulliver, um cirurgião e capitão de navio, viaja para lugares fantásticos, incluindo a terra dos liliputianos e dos gigantes. Suas aventuras satirizam a sociedade e a política de sua época.",
+            "descricao": "\"As Viagens de Gulliver\" é uma sátira mordaz da sociedade europeia, combinando humor e crítica social através das aventuras extravagantes de seu protagonista."
+        },
+        {
+            "id": "10",
+            "titulo": "Folhas de Relva",
+            "autor": "Walt Whitman",
+            "data_publicacao": "04/07/1855",
+            "genero": "Poesia",
+            "img": "https://m.media-amazon.com/images/I/61QvaausSRL._AC_UF1000,1000_QL80_.jpg",
+            "estado_publicacao": "Estados Unidos",
+            "cidade_publicacao": "Brooklyn",
+            "sinopse": "Uma coleção de poemas que celebra a natureza, a humanidade e a experiência americana. Whitman explora temas como individualidade, espiritualidade e democracia.",
+            "descricao": "\"Folhas de Relva\" é uma obra seminal da poesia americana, refletindo a visão transcendentalista e humanista de Walt Whitman sobre a vida e a sociedade."
+        },
+        {
+            "id": "11",
+            "titulo": "Steve Jobs",
+            "autor": "Walter Isaacson",
+            "data_publicacao": "24/10/2011",
+            "genero": "Biografia",
+            "img": "https://m.media-amazon.com/images/I/81QAU2Xl2jL._AC_UF350,350_QL50_.jpg",
+            "estado_publicacao": "Estados Unidos",
+            "cidade_publicacao": "Nova York",
+            "sinopse": "A biografia oficial de Steve Jobs, co-fundador da Apple Inc., explora sua vida, carreira e impacto na tecnologia e na cultura moderna.",
+            "descricao": "\"Steve Jobs\" é uma biografia reveladora que oferece um olhar profundo sobre a personalidade complexa e o legado duradouro de um dos maiores inovadores do século XXI."
+        },
+
+        {
+            "id": "12",
+            "titulo": "A Lua Vem da Ásia",
+            "autor": "Campos de Carvalho",
+            "data_publicacao": "01/01/1956",
+            "genero": "Crônica",
+            "img": "https://images.dlivros.org/Walter-Campos-de-Carvalho/lua-vem-asia-walter-campos-carvalho_medium.webp",
+            "estado_publicacao": "Brasil",
+            "cidade_publicacao": "Rio de Janeiro",
+            "sinopse": "Um relato surreal e cômico sobre as aventuras e desventuras de um homem que viaja pelo mundo em busca de sentido e propósito.",
+            "descricao": "\"A Lua Vem da Ásia\" é uma obra única de Campos de Carvalho, conhecida por seu estilo irreverente e sua abordagem não convencional da narrativa."
+        },
+        {
+            "id": "13",
+            "titulo": "A Lebre e a Tartaruga",
+            "autor": "Esopo",
+            "data_publicacao": "Antiguidade",
+            "genero": "Fábula",
+            "img": "https://editorapedaletra.com.br/media/catalog/product/cache/d51e17e3f97aa21e3ce0a3f7526ec2e9/w/h/whatsapp_image_2021-03-22_at_16.59.54_1_.jpeg",
+            "estado_publicacao": "Grécia Antiga",
+            "cidade_publicacao": "Atenas",
+            "sinopse": "Uma lebre arrogante desafia uma tartaruga para uma corrida, confiando em sua velocidade. A tartaruga, lenta mas constante, acaba vencendo a corrida.",
+            "descricao": "\"A Lebre e a Tartaruga\" é uma das fábulas mais conhecidas de Esopo, ensinando lições sobre humildade e perseverança."
+        },
+        {
+            "id": "14",
+            "titulo": "A Ilíada",
+            "autor": "Homero",
+            "data_publicacao": "Antiguidade",
+            "genero": "Mitologia",
+            "img": "https://m.media-amazon.com/images/I/91VS8lg9+QL._AC_UF1000,1000_QL80_.jpg",
+            "estado_publicacao": "Grécia Antiga",
+            "cidade_publicacao": "Atenas",
+            "sinopse": "A epopeia narra os eventos da Guerra de Troia, destacando a ira de Aquiles e as aventuras e desventuras dos heróis gregos e troianos.",
+            "descricao": "\"A Ilíada\" é uma das obras fundamentais da literatura ocidental, oferecendo uma visão épica e poética dos mitos e lendas da Grécia Antiga."
+        }
+    ]
+}

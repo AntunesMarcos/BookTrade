@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Avaliação de Usuários</title>
+    <link rel="stylesheet" href="/Assets/Css/avaliaçaoUsuario.css">
+</head>
+<body>
+    <div class="review-container">
+        <h1>Avalie este usuário</h1>
+        <div class="user-details">
+            <div class="foto">
+            </div>
+            <h2></h2>
+        </div>
+        <div class="rating-stars">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        </div>
+        <button id="submit-review">Enviar Avaliação</button>
+        <p class="rating-result">Avaliação: <span id="rating-value">0</span> estrelas</p>
+        <div id="thank-you" class="hidden">Obrigado pela sua avaliação!</div>
+    </div>
+    <script src="/Assets/Scripts/avaliaçaoUsuario.js"></script>
+</body>
+</html>
