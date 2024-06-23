@@ -44,7 +44,7 @@ function Onload() {
     });
 
     if (localStorage.getItem("token") == null) {
-        document.getElementById("boxLogin").innerHTML += ("<a  id='a-criar-conta' href='/View/cadastrousuario.html'><p id='criar-conta'>Criar conta</p></a>" + "<a  id='a-criar-conta' href='/View/login.html'><img src='/Assets/Img/User-Icon.png' id='icone-usuario' alt='icone de usuario'></a>");
+        document.getElementById("boxLogin").innerHTML += ("<a  id='a-criar-conta' href='/View/login.html'><p id='criar-conta'>Criar conta</p></a>" + "<a  id='a-criar-conta' href='/View/login.html'><img src='/Assets/Img/User-Icon.png' id='icone-usuario' alt='icone de usuario'></a>");
     } else {
         let user = JSON.parse(localStorage.getItem("users"))[0];
         let nome = user.nome;
@@ -64,6 +64,23 @@ function Onload() {
             imagemPerfil.src = '/Assets/Img/User-Icon.png';
         }
     }
+
+    FocoInput.addEventListener('input', () => {
+    const nome = FocoInput.value;
+    filterWithGenre(nome, nome, nome);
+});
+
+    FocoInput.addEventListener('focus', () => {
+    if (FocoInput.value === 'Buscar') {
+        FocoInput.value = '';
+    }
+});
+
+FocoInput.addEventListener('blur', () => {
+    if (FocoInput.value === '') {
+        FocoInput.value = 'Buscar';
+    }
+});
 }
 
 document.getElementById('gen').addEventListener('click', () => {
@@ -72,11 +89,12 @@ document.getElementById('gen').addEventListener('click', () => {
 });
 
 async function fetchGenres() {
+    let genres = [];
     try {
         const response = await fetch('/Db/localstorage.json');
         const data = await response.json();
 
-        const genres = data.livros.map(livro => livro.genero);
+        genres = data.livros.map(livro => livro.genero);
 
         for (let i = 0; i < genres.length; i++) {
             const genre = genres[i];
@@ -88,16 +106,24 @@ async function fetchGenres() {
     } catch (error) {
         console.error('Erro:', error);
     }
-
-    const genres = JSON.parse(localStorage.getItem('livros')).map(livro => livro.genero);
-
-    for (let i = 0; i < genres.length; i++) {
-        const genre = genres[i];
-        const genreElement = document.createElement('li');
-        genreElement.value = genre;
-        genreElement.textContent = genre;
-        document.getElementById('genres-list').appendChild(genreElement);
+    const local = JSON.parse(localStorage.getItem('livros'));
+    if (local) {
+        try {
+            const livros = local;
+            genres = livros.map(livro => livro.genero);
+        }catch (error) {
+            console.error('Erro:', error);
+        }
+            genres.forEach(genre => {
+                const genreElement = document.createElement('li');
+                genreElement.value = genre;
+                genreElement.textContent = genre;
+                document.getElementById('genres-list').appendChild(genreElement);
+    });
     }
+
+    
+
 }
 
 function filterWithGenre(genre, autor, titulo) {
@@ -105,7 +131,7 @@ function filterWithGenre(genre, autor, titulo) {
 
     for (let i = 0; i < cards.length; i++) {
         const card = cards[i];
-        const info = card.querySelector('#info');
+        const info = card.querySelector('.info');
         const tituloElement = info.querySelector('.titulo');
         const autorElement = info.querySelector('.autor');
         const genreElement = info.querySelector('.genre');
@@ -119,10 +145,6 @@ function filterWithGenre(genre, autor, titulo) {
     }
 }
 
-FocoInput.addEventListener('input', () => {
-    const nome = FocoInput.value;
-    filterWithGenre(nome, nome, nome);
-});
 
 function generateCardBook(book) {
     const card = document.createElement('div');
@@ -133,7 +155,7 @@ function generateCardBook(book) {
     img.src = book.img || book.imagem;
 
     const info = document.createElement('div');
-    info.id = 'info';
+    info.classList.add('info');
 
     const title = document.createElement('h2');
     title.classList.add('titulo');
@@ -199,14 +221,4 @@ async function getBooks() {
     }
 }
 
-FocoInput.addEventListener('focus', () => {
-    if (FocoInput.value === 'Buscar') {
-        FocoInput.value = '';
-    }
-});
 
-FocoInput.addEventListener('blur', () => {
-    if (FocoInput.value === '') {
-        FocoInput.value = 'Buscar';
-    }
-});

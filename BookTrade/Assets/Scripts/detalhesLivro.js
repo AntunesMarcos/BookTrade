@@ -46,8 +46,12 @@ $(document).ready(function () {
         );
         
             $('#imagem-vendedor').attr('src', '/Assets/Img/User-Icon.png');
-            $('#nome-vendedor').text('Nome: Livraria Virtual');
-            $('#avaliacao').text('Avaliação: '+ estrelas +' estrelas');
+        $('#nome-vendedor').text('Nome: Livraria Virtual');
+        if (estrelas === null) {
+            $('#avaliacao').text('Avaliação: 0 estrelas');
+        } else {
+            $('#avaliacao').text('Avaliação: ' + estrelas + ' estrelas');
+        }
         
     }
 
