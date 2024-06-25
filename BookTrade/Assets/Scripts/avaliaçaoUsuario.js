@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function Onload() {
     if (localStorage.getItem("token") == null) {
-        document.querySelector(".foto").innerHTML += ("<img src='/Assets/Img/User-Icon.png'  alt='icone de usuario'>");
+        document.querySelector(".foto").innerHTML += ("<img src='/Assets/Img/User-Icon.png' class='user-avatar'  alt='icone de usuario'>");
     } else {
         let user = JSON.parse(localStorage.getItem("users"))[0];
         let nome = user.nome;
@@ -89,10 +89,9 @@ function Onload() {
             imagemPerfil.src = dataURL;
             imagemPerfil.style.width = '70px';
             imagemPerfil.style.height = '70px';
-            imagemPerfil.style.padding = '10px';
-            imagemPerfil.style.marginRight = '30px';
             imagemPerfil.style.borderRadius = '50%';
             imagemPerfil.style.objectFit = 'cover';
+            imagemPerfil.style.boxShadow = 'rgba(0, 0, 0, 0.35) 0px 5px 15px;';
         } else {
             imagemPerfil.src = '/Assets/Img/User-Icon.png';
         }
